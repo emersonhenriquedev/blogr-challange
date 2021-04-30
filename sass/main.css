@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass";
+}
+
+.heading-primary--main {
+  font-size: 5rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.heading-primary--sub {
+  font-weight: 400;
+}
+
+.header {
+  height: 75vh;
+  padding: 5rem 12rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 143, 112, 0.95)), to(rgba(255, 61, 84, 0.99))), url(/img/bg-pattern-intro.svg);
+  background-image: linear-gradient(to right bottom, rgba(255, 143, 112, 0.95), rgba(255, 61, 84, 0.99)), url(/img/bg-pattern-intro.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 27% 51%;
+  color: white;
+  border-bottom-left-radius: 7rem;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30rem;
+}
+
+.header__item {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.header__item:not(:first-child) {
+  margin-left: 3rem;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__link:visited, .header__link:link {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.header__login-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  width: 15rem;
+}
+
+.header__login-actions > a:first-child {
+  text-decoration: none;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.header__login-actions > .btn {
+  min-width: 13rem;
+}
+
+.header__text-box {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.header__button-box {
+  margin-top: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: white;
+  font-size: 1.6rem;
+  color: #ff525d;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  padding: 1.4rem;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.btn:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.btn--outlined {
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+}
+
+.btn--outlined:hover {
+  background-color: white;
+  color: #ff525d;
+}
+/*# sourceMappingURL=main.css.map */

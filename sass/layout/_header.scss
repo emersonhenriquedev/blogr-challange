@@ -1,0 +1,87 @@
+.header {
+  height: 75vh;
+  padding: 5rem 12rem;
+  //   background-color: $color-primary;
+  //   background-image: url(/img/bg-pattern-intro.svg);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-gradient-light-red, 0.95),
+      rgba($color-gradient-light-red-2, 0.99)
+    ),
+    url(/img/bg-pattern-intro.svg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 27% 51%;
+
+  color: $color-white;
+
+  border-bottom-left-radius: 7rem;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+  }
+
+  &__list {
+    display: flex;
+
+    margin-left: -30rem;
+    // margin-left: 6%;
+  }
+
+  &__item {
+    display: inline-block;
+    font-size: $default-font-size;
+
+    &:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:visited,
+    &:link {
+      color: $color-white;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  &__login-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    width: 15rem;
+    // margin-left: 47rem;
+    // width: 30rem;
+
+    & > a:first-child {
+      text-decoration: none;
+      color: $color-white;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 500;
+      font-size: $default-font-size;
+    }
+
+    & > .btn {
+      min-width: 13rem;
+    }
+  }
+
+  &__text-box {
+    margin-top: 8rem;
+    text-align: center;
+  }
+
+  &__button-box {
+    margin-top: 4rem;
+  }
+}
