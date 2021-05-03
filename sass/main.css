@@ -54,20 +54,39 @@ body {
           justify-content: space-between;
 }
 
-.header__list {
+.header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: -30rem;
+  padding-top: 2rem;
 }
 
-.header__item {
+.header__menu-item {
   display: inline-block;
   font-size: 1.6rem;
+  position: relative;
+  height: 4rem;
+  cursor: pointer;
 }
 
-.header__item:not(:first-child) {
+.header__menu-item:not(:first-child) {
   margin-left: 3rem;
+}
+
+.header__menu-item:hover .header__dropdown-content {
+  display: block;
+}
+
+.header__menu-item:hover .header__link::after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  background-image: url(../../img/icon-arrow-light.svg);
+  width: 10px;
+  height: 7px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .header__link {
@@ -78,6 +97,50 @@ body {
   color: white;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
+}
+
+.header__link::after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  background-image: url(../../img/icon-arrow-light.svg);
+  width: 10px;
+  height: 7px;
+  -webkit-transition: -webkit-transform 0.9s;
+  transition: -webkit-transform 0.9s;
+  transition: transform 0.9s;
+  transition: transform 0.9s, -webkit-transform 0.9s;
+}
+
+.header__dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 3rem 5rem 3rem 2rem;
+  top: 3.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.header__dropdown-item {
+  list-style: none;
+}
+
+.header__dropdown-link {
+  display: inline-block;
+  font-family: Ubuntu;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #25252d;
+}
+
+.header__dropdown-link:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.header__dropdown-link:hover {
+  font-weight: 700;
 }
 
 .header__login-actions {
@@ -131,6 +194,8 @@ body {
   padding: 1.4rem;
   margin-left: 4px;
   margin-right: 4px;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
 }
 
 .btn:hover {

@@ -27,19 +27,42 @@
   &__logo {
   }
 
-  &__list {
+  &__menu {
     display: flex;
 
     margin-left: -30rem;
+    padding-top: 2rem;
+
     // margin-left: 6%;
   }
 
-  &__item {
+  &__menu-item {
     display: inline-block;
     font-size: $default-font-size;
+    position: relative;
+    height: 4rem;
+    cursor: pointer;
 
     &:not(:first-child) {
       margin-left: 3rem;
+    }
+
+    &:hover {
+      & .header__dropdown-content {
+        display: block;
+      }
+
+      & .header__link::after {
+        content: "";
+        display: inline-block;
+        margin-left: 5px;
+        background-image: url(../../img/icon-arrow-light.svg);
+
+        width: 10px;
+        height: 7px;
+
+        transform: rotate(-180deg);
+      }
     }
   }
 
@@ -51,6 +74,48 @@
       color: $color-white;
       font-family: "Ubuntu", sans-serif;
       font-weight: 500;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-left: 5px;
+      background-image: url(../../img/icon-arrow-light.svg);
+      width: 10px;
+      height: 7px;
+      transition: transform 0.9s;
+    }
+  }
+
+  &__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $color-white;
+    padding: 3rem 5rem 3rem 2rem;
+    top: 3.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    // z-index: 10;
+  }
+
+  &__dropdown-item {
+    list-style: none;
+  }
+
+  &__dropdown-link {
+    display: inline-block;
+    font-family: Ubuntu;
+    text-decoration: none;
+    font-size: 1.5rem;
+    // color: #000;
+    color: $color-dark-black-blue;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      font-weight: 700;
     }
   }
 
