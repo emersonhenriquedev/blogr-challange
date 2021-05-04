@@ -30,6 +30,36 @@ body {
   font-weight: 400;
 }
 
+.heading-secondary {
+  font-size: 3rem;
+  color: #1f3f5b;
+}
+
+.heading-tertiary {
+  font-size: 2.5rem;
+  color: #1f3f5b;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-top-big {
+  margin-top: 7rem;
+}
+
+.u-margin-top-extra {
+  margin-top: 10rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 10rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+
 .header {
   height: 75vh;
   padding: 5rem 12rem;
@@ -212,5 +242,31 @@ body {
 .btn--outlined:hover {
   background-color: white;
   color: #ff525d;
+}
+
+.section-features {
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-features__feature-container {
+  width: 50%;
+  padding-left: 10rem;
+}
+
+.section-features__feature-container p {
+  font-size: 1.6rem;
+  font-family: Ubuntu, sans-serif;
+  color: #4b5862;
+  line-height: 3rem;
+}
+
+.section-features__image {
+  width: 60%;
+  float: right;
+  position: absolute;
+  top: 10%;
+  left: 58%;
 }
 /*# sourceMappingURL=main.css.map */
