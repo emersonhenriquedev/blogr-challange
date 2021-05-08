@@ -40,16 +40,21 @@ body {
   color: #1f3f5b;
 }
 
+.heading-tertiary--hilight {
+  font-size: 3.8rem;
+  color: white;
+}
+
 .u-center-text {
   text-align: center !important;
 }
 
 .u-margin-top-big {
-  margin-top: 7rem;
+  margin-top: 7rem !important;
 }
 
 .u-margin-top-extra {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
 }
 
 .u-margin-bottom-big {
@@ -268,5 +273,34 @@ body {
   position: absolute;
   top: 10%;
   left: 58%;
+}
+
+.section-feature-hilight {
+  background-color: #3f4164;
+  border-bottom-left-radius: 7rem;
+  border-top-right-radius: 7rem;
+  height: 33rem;
+  padding: 0 6rem;
+  position: relative;
+}
+
+.section-feature-hilight__hilight-container {
+  position: absolute;
+  width: 50%;
+  right: 5%;
+  top: 30%;
+}
+
+.section-feature-hilight__hilight-container p {
+  color: white;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  width: 82%;
+}
+
+.section-feature-hilight img {
+  position: absolute;
+  top: -6rem;
+  height: 48rem;
 }
 /*# sourceMappingURL=main.css.map */
