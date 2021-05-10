@@ -1,0 +1,43 @@
+.footer {
+  background-color: $color-dark-black-blue;
+
+  font-family: "Ubuntu", sans-serif;
+  border-top-right-radius: 7rem;
+
+  display: flex;
+  padding: 7rem 7rem;
+
+  &__menu-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    margin-left: 20rem;
+    font-size: 1.5rem;
+  }
+
+  &__menu-title {
+    color: $color-white;
+    margin-bottom: 3.5rem;
+  }
+
+  &__menu-list {
+    list-style: none;
+  }
+
+  &__menu-item {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    & a:link,
+    :visited {
+      text-decoration: none;
+      color: $color-grayish-blue;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+}

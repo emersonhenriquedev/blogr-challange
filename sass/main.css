@@ -61,12 +61,28 @@ body {
   margin-bottom: 10rem !important;
 }
 
+.u-margin-bottom-medium {
+  margin-bottom: 5rem !important;
+}
+
 .u-margin-bottom-small {
   margin-bottom: 2rem !important;
 }
 
+.u-float-right {
+  float: right !important;
+}
+
+.u-float-left {
+  float: left !important;
+}
+
+.u-clear-right {
+  clear: right !important;
+}
+
 .header {
-  height: 75vh;
+  min-height: 75vh;
   padding: 5rem 12rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 143, 112, 0.95)), to(rgba(255, 61, 84, 0.99))), url(/img/bg-pattern-intro.svg);
   background-image: linear-gradient(to right bottom, rgba(255, 143, 112, 0.95), rgba(255, 61, 84, 0.99)), url(/img/bg-pattern-intro.svg);
@@ -213,6 +229,53 @@ body {
   margin-top: 4rem;
 }
 
+.footer {
+  background-color: #25252d;
+  font-family: "Ubuntu", sans-serif;
+  border-top-right-radius: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7rem 7rem;
+}
+
+.footer__menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__menu {
+  margin-left: 20rem;
+  font-size: 1.5rem;
+}
+
+.footer__menu-title {
+  color: white;
+  margin-bottom: 3.5rem;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__menu-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.footer__menu-item a:link,
+.footer__menu-item :visited {
+  text-decoration: none;
+  color: #c8c8cb;
+}
+
+.footer__menu-item a:hover {
+  text-decoration: underline;
+}
+
 .btn {
   display: inline-block;
   background-color: white;
@@ -261,7 +324,7 @@ body {
 }
 
 .section-features__feature-container p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: Ubuntu, sans-serif;
   color: #4b5862;
   line-height: 3rem;
@@ -273,6 +336,27 @@ body {
   position: absolute;
   top: 10%;
   left: 58%;
+}
+
+.section-features__feature-container--right {
+  width: 48%;
+  padding-top: 15rem;
+  padding-right: 15rem;
+  position: relative;
+  float: right;
+}
+
+.section-features__feature-container--right p {
+  font-size: 1.5rem;
+  font-family: Ubuntu, sans-serif;
+  color: #4b5862;
+  line-height: 3rem;
+}
+
+.section-features__image--left {
+  width: 60%;
+  position: absolute;
+  right: 58%;
 }
 
 .section-feature-hilight {

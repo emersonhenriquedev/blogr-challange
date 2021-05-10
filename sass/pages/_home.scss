@@ -9,7 +9,7 @@
     padding-left: 10rem;
 
     & p {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-family: Ubuntu, sans-serif;
       color: $color-grayish-blue-dark;
       line-height: $line-height;
@@ -22,6 +22,29 @@
     position: absolute;
     top: 10%;
     left: 58%;
+  }
+
+  &__feature-container--right {
+    width: 48%;
+    padding-top: 15rem;
+    padding-right: 15rem;
+    position: relative;
+    float: right;
+
+    & p {
+      font-size: 1.5rem;
+      font-family: Ubuntu, sans-serif;
+      color: $color-grayish-blue-dark;
+      line-height: $line-height;
+    }
+  }
+
+  &__image--left {
+    width: 60%;
+    // float: left;
+    position: absolute;
+    // top: 10%;
+    right: 58%;
   }
 }
 
